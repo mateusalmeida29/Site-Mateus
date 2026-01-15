@@ -4,9 +4,10 @@
     --bg: #ecf009;
     --white: #fff;
     --border: 0.1rem solid rgb(228, 224, 30);
-    font-size: 10px
+    font-size: 10px;
 }
 
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
@@ -22,12 +23,14 @@ body {
     background-color: var(--black);
 }
 
+/* Seções */
 section {
     padding: 5rem 2rem;
     margin: 0 auto;
     max-width: 1200px;
 }
 
+/* Header */
 .header {
     position: fixed;
     top: 0;
@@ -43,9 +46,8 @@ section {
 .header section {
     justify-content: center;
     display: flex;
-    padding-top: 2.7rem;
-    padding-bottom: 2.7rem;
- }
+    padding: 2.7rem 0;
+}
 
 .navbar a {
     margin: 3rem;
@@ -60,17 +62,7 @@ section {
     font-size: 2rem;
 }
 
-.icons img {
-    margin: 1rem;
-    cursor: pointer;
-}
-
-.icons img:hover {
-    width: 40px;
-    height: 40px;
-    border-bottom: 0.1rem solid var(--bg);
-}
-
+/* Botões */
 .btn {
     background: var(--main-color);
     color: #ffffff;
@@ -86,29 +78,25 @@ section {
     background: #012a68;
 }
 
+/* Home / Banner */
 .home-container {
-    min-height: 100vh;
-    background: url("https://mateusalmeida29.github.io/Site-Mateus/img/fundo.png");
-    background-size: cover;
-    background-position: center;
-}
-
-.home-container section {
-    min-height: 100vh;
+    height: 100vh; /* garante altura total da tela */
+    width: 100%;
     display: flex;
-    margin-top: 90px;
+    justify-content: center;
     align-items: center;
+    background: url("https://mateusalmeida29.github.io/Site-Mateus/img/fundo.png") no-repeat center center;
+    background-size: cover;
 }
 
-.container {
+.home-container .container {
+    text-align: center;
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto; /* centraliza o container */
-    padding: 0 20px;
 }
 
-.content {
-    max-width: 100vh;
+.home-container .content {
+    max-width: 100%;
 }
 
 .content h1 {
@@ -125,10 +113,7 @@ section {
     padding: 1rem 0;
 }
 
-
-
-
-
+/* Títulos das seções */
 .title {
     border-bottom: 0.1rem solid var(--black);
     font-size: 3rem;
@@ -137,29 +122,30 @@ section {
     text-transform: uppercase;
     margin-bottom: 4rem;
 }
+
 .title span {
     font-size: 3rem;
     color: #fff;
     text-transform: uppercase;
 }
 
-
-
-
-
+/* Sobre */
 .about .row {
     display: flex;
     align-items: center;
     background-color: #5c5c5c60;
     gap: 1.5rem;
 }
+
 .about .row .content {
-    pad: 2rem;
+    padding: 2rem; /* corrigido 'pad' -> padding */
 }
+
 .about .row .content h3 {
     font-size: 3rem;
     color: #ffffff;
 }
+
 .about .row .content p {
     font-size: 1.6rem;
     color: #fcfcf9;
@@ -167,96 +153,74 @@ section {
     line-height: 1.8;
 }
 
-
-
-
+/* Imagem remoto */
 .img-remoto {
-    background: url("./img/remoto.png");
-    background-position: center;
+    background: url("./img/remoto.png") no-repeat center center;
     background-size: cover;
 }
+
 .img-remoto section {
     display: flex;
     align-items: center;
     min-height: 100vh;
 }
 
-
-
-
-
-
+/* Avaliações */
 .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 1.5rem;
 }
+
 .box-container .box {
     text-align: center;
     padding: 5rem;
     cursor: pointer;
-}
-
-
-
-
-
-
-.review .box-container .box {
     border: var(--border);
-    text-align: center;
-    padding: 3rem 2rem;
 }
+
 .review .box-container .box p {
     font-size: 1.5rem;
     color: #ffffff;
     padding: 2rem 0;
     line-height: 1.8;
 }
+
 .review .box-container .box h3 {
     color: #fff;
     font-size: 2rem;
     margin: 1rem 0;
 }
+
 .review .box-container .box .user {
     height: 7rem;
     width: 7rem;
     border-radius: 50%;
 }
 
-
-
-
-
-
+/* Endereço */
 .address {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-
-
-
-
-
+/* Instagram */
 .instagram {
     text-align: center;
 }
+
 .instagram .icons-instagram {
     padding: 1rem 0;
 }
+
 .instagram .icons-instagram img {
     margin: 0.3rem;
     cursor: pointer;
     border-radius: 50%;
     padding: 1rem;
 }
+
 .instagram .icons-instagram img:hover {
     background-color: var(--main-color);
-
 }
-
-
-
-
