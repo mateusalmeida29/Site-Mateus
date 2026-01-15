@@ -4,7 +4,7 @@
     --bg: #ecf009;
     --white: #fff;
     --border: 0.1rem solid rgb(228, 224, 30);
-    font-size: 10px
+    font-size: 10px;
 }
 
 * {
@@ -45,7 +45,7 @@ section {
     display: flex;
     padding-top: 2.7rem;
     padding-bottom: 2.7rem;
- }
+}
 
 .navbar a {
     margin: 3rem;
@@ -102,7 +102,7 @@ section {
 .container {
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto; /* centraliza o container */
+    margin: 0 auto;
     padding: 0 20px;
 }
 
@@ -124,10 +124,6 @@ section {
     padding: 1rem 0;
 }
 
-
-
-
-
 .title {
     border-bottom: 0.1rem solid var(--black);
     font-size: 3rem;
@@ -136,15 +132,12 @@ section {
     text-transform: uppercase;
     margin-bottom: 4rem;
 }
+
 .title span {
     font-size: 3rem;
     color: #fff;
     text-transform: uppercase;
 }
-
-
-
-
 
 .about .row {
     display: flex;
@@ -152,13 +145,16 @@ section {
     background-color: #5c5c5c60;
     gap: 1.5rem;
 }
+
 .about .row .content {
-    pad: 2rem;
+    padding: 2rem;
 }
+
 .about .row .content h3 {
     font-size: 3rem;
     color: #ffffff;
 }
+
 .about .row .content p {
     font-size: 1.6rem;
     color: #fcfcf9;
@@ -166,67 +162,54 @@ section {
     line-height: 1.8;
 }
 
-
-
-
 .img-remoto {
     background: url("./img/remoto.png");
     background-position: center;
     background-size: cover;
 }
+
 .img-remoto section {
     display: flex;
     align-items: center;
     min-height: 100vh;
 }
 
-
-
-
-
-
 .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 1.5rem;
 }
+
 .box-container .box {
     text-align: center;
     padding: 5rem;
     cursor: pointer;
 }
 
-
-
-
-
-
 .review .box-container .box {
     border: var(--border);
     text-align: center;
     padding: 3rem 2rem;
 }
+
 .review .box-container .box p {
     font-size: 1.5rem;
     color: #ffffff;
     padding: 2rem 0;
     line-height: 1.8;
 }
+
 .review .box-container .box h3 {
     color: #fff;
     font-size: 2rem;
     margin: 1rem 0;
 }
+
 .review .box-container .box .user {
     height: 7rem;
     width: 7rem;
     border-radius: 50%;
 }
-
-
-
-
-
 
 .address {
     display: flex;
@@ -234,31 +217,128 @@ section {
     flex-direction: column;
 }
 
-
-
-
-
-
 .instagram {
     text-align: center;
 }
+
 .instagram .icons-instagram {
     padding: 1rem 0;
 }
+
 .instagram .icons-instagram img {
     margin: 0.3rem;
     cursor: pointer;
     border-radius: 50%;
     padding: 1rem;
 }
+
 .instagram .icons-instagram img:hover {
     background-color: var(--main-color);
 }
 
+/* ------------------ MEDIA QUERIES RESPONSIVAS ------------------ */
 
+/* Tablets e celulares grandes */
+@media (max-width: 992px) {
+    .navbar a {
+        margin: 1.5rem;
+        font-size: 2rem;
+    }
 
+    .content h1 {
+        font-size: 2.5rem;
+    }
 
+    .content p {
+        font-size: 2rem;
+    }
 
+    .btn {
+        padding: 1rem 4rem;
+        font-size: 1.5rem;
+    }
 
+    .about .row {
+        flex-direction: column;
+        text-align: center;
+    }
 
+    .about .row .content {
+        padding: 1rem;
+    }
 
+    .review .box-container .box {
+        padding: 2rem 1rem;
+    }
+
+    section {
+        padding: 3rem 1rem;
+    }
+}
+
+/* Celulares pequenos */
+@media (max-width: 768px) {
+    .navbar a {
+        margin: 1rem;
+        font-size: 1.6rem;
+    }
+
+    .content h1 {
+        font-size: 2rem;
+    }
+
+    .content p {
+        font-size: 1.4rem;
+    }
+
+    .btn {
+        padding: 0.8rem 3rem;
+        font-size: 1.3rem;
+    }
+
+    .box-container {
+        grid-template-columns: 1fr; /* Boxes empilhados */
+    }
+
+    .home-container section {
+        flex-direction: column;
+        padding-top: 120px;
+    }
+}
+
+/* Celulares muito pequenos */
+@media (max-width: 480px) {
+    .content h1 {
+        font-size: 1.6rem;
+    }
+
+    .content p {
+        font-size: 1.2rem;
+    }
+
+    .btn {
+        padding: 0.6rem 2rem;
+        font-size: 1.1rem;
+    }
+
+    .navbar a {
+        margin: 0.5rem;
+        font-size: 1.2rem;
+    }
+
+    .about .row .content h3 {
+        font-size: 1.8rem;
+    }
+
+    .review .box-container .box p {
+        font-size: 1.2rem;
+    }
+
+    .review .box-container .box h3 {
+        font-size: 1.4rem;
+    }
+
+    section {
+        padding: 2rem 0.5rem;
+    }
+}
