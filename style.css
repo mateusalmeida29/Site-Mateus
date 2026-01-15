@@ -88,7 +88,7 @@ section {
 
 .home-container {
     min-height: 100vh;
-    background: url("../img/fundo.png");
+    background: url("https://mateusalmeida29.github.io/Site-Mateus/img/fundo.png");
     background-size: cover;
     background-position: center;
 }
@@ -256,6 +256,7 @@ section {
     background-color: var(--main-color);
 
 }
+
 
 
 
