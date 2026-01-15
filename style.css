@@ -91,15 +91,13 @@ section {
     min-height: 100vh;
     background: url("https://mateusalmeida29.github.io/Site-Mateus/img/fundo.png") no-repeat center center;
     background-size: cover;
-    display: flex;
-    align-items: center;
+    background-position: center;
 }
 
 .home-container section {
     min-height: 100vh;
     display: flex;
-    align-items: center;
-    margin-top: 0; /* removido excesso de margem que escondia o fundo */
+    margin-top: 40px; /* removido excesso de margem que escondia o fundo */
 }
 
 .container {
@@ -243,3 +241,4 @@ section {
 .instagram .icons-instagram img:hover {
     background-color: var(--main-color);
 }
+
