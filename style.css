@@ -221,7 +221,6 @@ section {
 @media (max-width: 768px) {
     .home-container {
         background-position: top center;
-        background-size: contain;
         height: 40vh;
     }
 }
@@ -246,3 +245,4 @@ section {
         font-size: 1.4rem;
     }
 }
+
